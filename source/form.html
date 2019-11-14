@@ -36,6 +36,82 @@
       </nav>
     </header>
 
+    <main class="page-form">
+      <div class="page-form__wrapper">
+        <h1 class="page-form__title">Вязание на заказ</h1>
+        <p class="page-form__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form method="get" action="https://echo.htmlacademy.ru" class="page-form__form form">
+          <fieldset>
+            <legend class="form__heading--type">Тип</legend>
+            <p>
+              <input class="form__radio" type="radio" name="type" id="type-interior" checked="checked">
+              <label class="form__label" for="type-interior">Аксессуар для интерьера</label>
+            </p>
+            <p>
+              <input class="form__radio" type="radio" name="type" id="type-toy">
+              <label class="form__label" for="type-toy">Детская игрушка</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend class="form__heading--color">Цвет</legend>
+            <p>
+              <input class="form_checkbox" type="checkbox" id="color-white" name="white" checked="checked">
+              <label class="form__label" for="color-white">Белый</label>
+            </p>
+            <p>
+              <input class="form_checkbox" type="checkbox" id="color-gray" name="gray" checked="checked">
+              <label class="form__label" for="color-gray">Серый</label>
+            </p>
+            <p>
+              <input class="form_checkbox" type="checkbox" id="color-tiffany" name="tiffany">
+              <label class="form__label" for="color-tiffany">«Тиффани»</label>
+            </p>
+            <p>
+              <input class="form_checkbox" type="checkbox" id="color-black" name="black">
+              <label class="form__label" for="color-black">Черный</label>
+            </p>
+            <p>
+              <input class="form_checkbox" type="checkbox" id="color-pink" name="pink">
+              <label class="form__label" for="color-pink">Розовый</label>
+            </p>
+            <p>
+              <input class="form_checkbox" type="checkbox" id="color-orange" name="orange">
+              <label class="form__label" for="color-orange">Оранжевый</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend class="form__heading--fullname">ФИО</legend>
+            <p>
+              <label class="form__label" for="fullname-name">Имя:</label>
+              <input class="form__input" type="text" name="fullname-name" placeholder="Введите ваше имя*">
+            </p>
+            <p>
+              <label class="form__label" for="fullname-surname">Фамилия:</label>
+              <input class="form__input" type="text" name="fullname-surname" placeholder="Укажите фамилию*">
+            </p>
+            <p>
+              <label class="form__label" for="fullname-patronymic">Отчество:</label>
+              <input class="form__input" type="text" name="fullname-patronymic" placeholder="Отчество, если желаете">
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend class="form__heading--phone">Тел</legend>
+            <input class="form__input" type="text" name="phone-number" placeholder="+7 XXX XXX XX XX*">
+          </fieldset>
+          <fieldset>
+            <legend class="form__heading--email">E-mail</legend>
+            <input class="form__input" type="text" name="email-address" placeholder="Ваш Email*">
+          </fieldset>
+          <fieldset>
+            <legend class="form__heading--other">Доп</legend>
+            <textarea class="form__textarea" name="other-input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <small>*Поля обязательны для заполнения</small>
+          <button class="form__send button button" type="button">Отправить заказ</button>
+        </form>
+      </div>
+    </main>
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__social social">
