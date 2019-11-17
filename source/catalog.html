@@ -3,37 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка. Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип «Mishka»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item--active">
-              <a>Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="search.html">Поиск</a>
-            </li>
-            <li class="user-list__item">
-              <a href="cart.html">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип «Mishka»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item--active">
+                <a>Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a href="search.html">Поиск</a>
+              </li>
+              <li class="user-list__item">
+                <a href="cart.html">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-catalog">
@@ -46,7 +51,7 @@
             <ul class="catalog-products__list">
               <li class="catalog-products__item">
                 <a class="catalog-products__link">
-                  <img class="catalog-products__image" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото «Зайчик-попрыгайчик»">
+                  <img class="catalog-products__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото «Зайчик-попрыгайчик»">
                 </a>
                 <a class="catalog-products__link">
                   <h3>Зайчик-попрыгайчик</h3>
@@ -57,7 +62,7 @@
               </li>
               <li class="catalog-products__item">
                 <a class="catalog-products__link">
-                  <img class="catalog-products__image" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото «Корзинка для белья»">
+                  <img class="catalog-products__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото «Корзинка для белья»">
                 </a>
                 <a class="catalog-products__link">
                   <h3>Корзинка для белья</h3>
@@ -68,7 +73,7 @@
               </li>
               <li class="catalog-products__item">
                 <a class="catalog-products__link">
-                  <img class="catalog-products__image" src="https://via.placeholder.com/150x150" width="" height="" alt="Фото «Большая корзина для игрушек»">
+                  <img class="catalog-products__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото «Большая корзина для игрушек»">
                 </a>
                 <a class="catalog-products__link">
                   <h3>Большая корзина для игрушек</h3>
@@ -84,7 +89,9 @@
         <section class="process">
           <div class="process__wrapper">
             <h3 class="process__title">Процесс производства</h3>
-            <div class="process__video"></div>
+            <div class="process__video">
+              <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+            </div>
             <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <button class="process__order button" type="button">Сделать заказ</button>
           </div>
