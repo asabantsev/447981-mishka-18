@@ -1,3 +1,11 @@
+body {
+  background-color: @white-one;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  color: @black-three;
+}
+
+@import "variables.less";
 @import "blocks/advantages.less";
 @import "blocks/button.less";
 @import "blocks/catalog-products.less";
@@ -18,26 +26,18 @@
 @import "blocks/site-list.less";
 @import "blocks/social.less";
 @import "blocks/user-list.less";
-@import "variables.less";
 
-
-body {
-  background-color: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  color: @black-three;
-}
-
-.visually-hidden:not(:focus):not(:active),input[type=checkbox].visually-hidden,input[type=radio].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
