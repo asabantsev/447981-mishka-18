@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -120,14 +121,18 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Контакты</h3>
-          <dl class="contacts__param">
-            <dt>e-mail:</dt>
-            <dd>
-              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </dd>
-            <dt>адрес:</dt>
-            <dd>г. Санки-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
-          </dl>
+          <table class="contacts__param">
+            <tr>
+              <td>e-mail:</td>
+              <td>
+                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr>
+              <td>адрес:</td>
+              <td>г. Санки-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
           <div class="contacts__map"></div>
           <button class="contacts__write button" type="button">Напишите нам</button>
         </div>
