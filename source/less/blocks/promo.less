@@ -1,3 +1,22 @@
 .promo {
-  background-color: @primary;
+  // background-color: @primary;
+}
+
+.promo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 488px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper {
+    width: 670px;
+    min-height: 683px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 1050px;
+  }
 }

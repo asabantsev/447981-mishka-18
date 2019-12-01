@@ -1,3 +1,16 @@
 .user-list {
   background-color: @primary;
 }
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    width: 350px;
+    min-height: 89px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    width: 380px;
+  }
+}
