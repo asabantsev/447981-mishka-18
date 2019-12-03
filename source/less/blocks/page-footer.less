@@ -1,8 +1,25 @@
 .page-footer {
-  background-color: @primary-light;
+  // background-color: @primary-light;
 }
 
 .page-footer__wrapper {
-  background-color: @primary;
-  padding: 30px;
+  // background-color: @primary;
+  // padding: 30px;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 160px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    width: 670px;
+    min-height: 143px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+    min-height: 143px;
+  }
 }

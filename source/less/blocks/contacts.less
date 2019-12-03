@@ -1,7 +1,24 @@
 .contacts__wrapper {
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-size: auto 6px;
+  // background-image: url("../img/bg-zigzag-line.svg");
+  // background-repeat: repeat-x;
+  // background-size: auto 6px;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 895px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    width: 670px;
+    min-height: 928px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper {
+    width: 1050px;
+    min-height: 634px;
+  }
 }
 
 .contacts__map {

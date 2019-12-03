@@ -1,5 +1,10 @@
 .page-catalog {
-  background-color: @primary;
+  // background-color: @primary;
+}
+
+.page-catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-catalog__title {
@@ -7,6 +12,27 @@
   line-height: 30px;
   text-align: center;
   background-color: @primary-light;
-  padding: 75px;
+  // padding: 75px;
   margin: 0;
+  min-height: 176px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-catalog__wrapper {
+    width: 670px;
+  }
+
+  .page-catalog__title {
+    min-height: 224px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-catalog__wrapper {
+    width: 1050px;
+  }
+
+  .page-catalog__title {
+    min-height: 253px;
+  }
 }

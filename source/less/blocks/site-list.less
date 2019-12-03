@@ -1,3 +1,18 @@
 .site-list {
   background-color: @primary;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    order: 1;
+    width: 320px;
+    min-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    order: -1;
+    width: 380px;
+  }
+}
