@@ -1,23 +1,11 @@
 .page-form {
-  // background-color: @primary;
+  background-color: @primary;
 }
 
 .page-form__wrapper {
   width: 320px;
   margin: 0 auto;
   min-height: 2005px;
-}
-
-@media (min-width: @tablet-width) {
-  .page-form__wrapper {
-    width: 670px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-form__wrapper {
-    width: 1050px;
-  }
 }
 
 .page-form__subtitle {
@@ -37,4 +25,17 @@
 
 .page-form__form {
   padding: 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-form__wrapper {
+    width: 670px;
+    min-height: 1400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form__wrapper {
+    width: 1050px;
+  }
 }

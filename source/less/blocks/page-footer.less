@@ -10,10 +10,20 @@
   min-height: 160px;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: 670px;
     min-height: 143px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: block;
   }
 }
 

@@ -35,3 +35,47 @@
   height: 140px;
   border: solid 2px @secondary;
 }
+
+@media (min-width: @tablet-width) {
+  .form__fieldset-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__heading {
+    display: block;
+    width: 170px;
+    padding: 0;
+  }
+
+  .form__options {
+    width: 420px;
+  }
+
+  .form__send {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__heading {
+    width: 110px;
+  }
+
+  .form__options {
+    width: 700px;
+  }
+
+  .form__send {
+    margin-left: 110px;
+  }
+
+  .form__options--color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__options--color p {
+    width: 33%;
+  }
+}
