@@ -1,3 +1,54 @@
 .social {
-  background-color: @primary;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  width: 144px;
+  margin: 0 auto;
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.social__link--instagram {
+  content: "";
+  background-image: url("./../img/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+.social__link--facebook {
+  content: "";
+  background-image: url("./../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+.social__link--twitter {
+  content: "";
+  background-image: url("./../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    display: flex;
+    border-bottom: none;
+  }
+
+  .social__list {
+    padding: 57px 0 56px;
+  }
 }
