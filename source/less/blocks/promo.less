@@ -1,3 +1,9 @@
+.promo {
+  width: 100%;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
 .promo__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -24,12 +30,13 @@
   .promo-zigzag-line {
     display: block;
     height: 24px;
-    width: @tablet-width;
+    width: 100%;
     background-image: url(".././img/bg-zigzag-fill.svg");
     background-position: center;
-    background-size: 100% 24px;
+    background-size: auto 24px;
     position: absolute;
     bottom: 0;
+    z-index: 2;
   }
 }
 
@@ -46,11 +53,12 @@
   .promo-zigzag-line {
     display: block;
     height: 34px;
-    width: @desktop-width;
+    width: 100%;
     background-image: url(".././img/bg-zigzag-fill.svg");
     background-position: center;
-    background-size: 100% 34px;
+    background-size: auto 34px;
     position: absolute;
     bottom: 0;
+    z-index: 2;
   }
 }

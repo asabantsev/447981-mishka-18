@@ -1,5 +1,5 @@
 .page-catalog__wrapper {
-  width: @mobile-width;
+  width: 100%;
   margin: 0 auto;
   background-color: @primary;
 }
@@ -14,35 +14,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-catalog__wrapper {
-    width: @tablet-width;
-    margin: 0 auto;
-  }
-
   .page-catalog__title {
     font-size: 43px;
     line-height: 50px;
     padding: 95px 0 92px;
     background-image: url(".././img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom;
-    background-size: 100% 24px;
+    background-size: auto 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-catalog__wrapper {
-    width: @desktop-width;
-    margin: 0 auto;
-  }
-
   .page-catalog__title {
-    background-image: url(".././img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 34px;
+    background-size: auto 34px;
     font-size: 53px;
     line-height: 57px;
     padding: 93px 0 122px;
+    width: 100%;
   }
 }
