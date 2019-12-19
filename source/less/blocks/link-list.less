@@ -10,8 +10,32 @@
 
 @media (min-width: @desktop-width) {
   .link-list {
-    display: block;
+    display: flex;
     width: 670px;
-    min-height: 60px;
+    z-index: 2;
+  }
+
+  .link-list__item {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 18px 0;
+  }
+
+  .link-list__item:first-child {
+    padding-right: 60px;
+  }
+
+  .link-list__item a {
+    color: @secondary;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

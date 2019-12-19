@@ -1,13 +1,10 @@
 .page-footer {
-  // background-color: @primary-light;
+  background-color: @primary-light;
 }
 
 .page-footer__wrapper {
-  // background-color: @primary;
-  // padding: 30px;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
-  min-height: 160px;
 }
 
 .page-footer__logo {
@@ -17,19 +14,20 @@
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: 670px;
-    min-height: 143px;
     display: flex;
     justify-content: space-between;
   }
 
   .page-footer__logo {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 82px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
     width: 1050px;
-    min-height: 143px;
   }
 }
