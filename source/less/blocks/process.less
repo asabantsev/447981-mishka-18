@@ -1,11 +1,65 @@
 .process {
   background-color: @primary;
+  padding-bottom: 58px;
 }
 
 .process__wrapper {
-  width: 320px;
+  width: 258px;
   margin: 0 auto;
-  min-height: 561px;
+  border: solid 1px @neutral-light;
+  position: relative;
+}
+
+.process__title {
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 91px;
+  margin-top: 23px;
+  margin-bottom: 24px;
+}
+
+.process__title-icon {
+  position: absolute;
+  top: 29px;
+  left: 33px;
+
+  g {
+    fill: @accent-dark;
+  }
+}
+
+.process__video {
+  width: 258px;
+  height: 150px;
+  position: relative;
+}
+
+.process__video-icon {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  left: 81px;
+  top: 35px;
+}
+
+.process__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: @neutral;
+  margin: 27px 34px 25px;
+}
+
+.process__order {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #444444;
+  width: 190px;
+  border: solid 2px #444444;
+  background-color: #ffffff;
+  padding: 14px;
+  margin: 25px 34px 33px 34px;
 }
 
 @media (min-width: @tablet-width) {
@@ -17,22 +71,57 @@
 
   .process__video {
     order: -1;
+    width: 670px;
+    height: 455px;
   }
 
   .process__video img {
     width: 670px;
     height: 456px;
   }
+
+  .process__video-icon {
+    left: 284px;
+    top: 188px;
+  }
+
+  .process__title {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 107px;
+  }
+
+  .process__title-icon {
+    top: 489px;
+    left: 43px;
+  }
+
+  .process__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 8px 40px 35px;
+  }
+
+  .process__order {
+    margin: 0 40px 45px;
+    width: 590px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .process__wrapper {
     width: 1050px;
+    height: 455px;
   }
 
   .process__video {
     width: 680px;
     position: absolute;
+  }
+
+  .process__title-icon {
+    top: 41px;
+    left: 762px;
   }
 
   .process__video img {
@@ -41,17 +130,20 @@
   }
 
   .process__title {
-    width: 370px;
-    margin-left: 680px;
+    margin-left: 760px;
+    margin-top: 95px;
+    font-size: 20px;
+    width: 150px;
   }
 
   .process__text {
-    width: 370px;
-    margin-left: 680px;
+    width: 230px;
+    margin-left: 760px;
+    margin-bottom: 50px;
   }
 
   .process__order {
-    width: 370px;
-    margin-left: 680px;
+    width: 230px;
+    margin-left: 760px;
   }
 }
