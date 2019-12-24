@@ -3,8 +3,8 @@
   margin: 0 auto;
   background-color: @primary;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
   background-position: bottom;
 }
 
@@ -95,6 +95,7 @@
 @media (min-width: @tablet-width) {
   .product-week {
     width: 100%;
+    background-size: auto 15px;
   }
 
   .product-week__wrapper {
@@ -157,8 +158,8 @@
 
 @media (min-width: @desktop-width) {
   .product-week {
-    width: 100%;
-    background-size: 1050px auto;
+    background-size: 1050px 23px;
+    width: 1050px;
   }
 
   .product-week__wrapper {
