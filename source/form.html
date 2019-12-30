@@ -18,7 +18,11 @@
           </button>
           <div class="main-nav__wrapper">
             <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Mishka»">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 770px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Mishka»">
+              </picture>
             </a>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
