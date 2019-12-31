@@ -16,6 +16,15 @@
 
 .catalog-products__item {
   margin-top: 30px;
+  max-height: 662px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog-products__item:last-child {
@@ -39,6 +48,16 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 5px;
+  color: @secondary;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-products__description {
@@ -78,6 +97,17 @@
   width: 21px;
   height: 18px;
   opacity: 0.2;
+  fill: @secondary;
+
+  &:hover {
+    opacity: 1;
+    fill: @accent-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: @accent-dark;
+  }
 }
 
 @media (min-width: @tablet-width) {

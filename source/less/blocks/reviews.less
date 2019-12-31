@@ -65,6 +65,14 @@
   padding: 0;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev::before {
@@ -88,6 +96,14 @@
   padding: 0;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__next::before {
@@ -114,6 +130,15 @@
   margin-bottom: 45px;
   padding: 14px 0;
   cursor: pointer;
+
+  &:hover {
+    color: @primary;
+    background-color: @neutral;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

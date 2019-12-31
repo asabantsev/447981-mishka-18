@@ -11,6 +11,12 @@
   display: none;
 }
 
+.page-footer__copyright {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: 670px;
@@ -23,6 +29,18 @@
     align-items: center;
     justify-content: center;
     padding-right: 82px;
+  }
+
+  .page-footer__logo svg {
+    fill: @secondary;
+
+    &:hover {
+      fill: @accent-link;
+    }
+
+    &:active {
+      fill: @accent-link;
+    }
   }
 }
 

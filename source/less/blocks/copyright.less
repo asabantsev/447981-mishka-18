@@ -12,12 +12,19 @@
 }
 
 .copyright__logo {
-  path {
-    fill: @accent-dark;
-  }
+  fill: @accent-dark;
   width: 27px;
   height: 34px;
   margin: 9px 0 0 29px;
+
+  &:hover {
+    fill: @accent-link;
+  }
+
+  &:active {
+    fill: @accent-link;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
