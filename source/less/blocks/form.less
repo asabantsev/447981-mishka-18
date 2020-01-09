@@ -73,6 +73,24 @@
   }
 }
 
+.form__label--radio:hover::before {
+  border-color: @accent-dark;
+}
+
+.form__label--radio:active::before {
+  border-color: @neutral;
+  opacity: 0.3;
+}
+
+.form__label--checkbox:hover::before {
+  border-color: @accent-dark;
+}
+
+.form__label--checkbox:active::before {
+  border-color: @neutral;
+  opacity: 0.3;
+}
+
 .form__label-wrapper {
   display: block;
 }
@@ -116,11 +134,20 @@
   margin: 0;
   border: 0;
   border-bottom: solid 2px @secondary;
+  color: @neutral;
+
+  &:hover {
+    border-color: @accent-dark;
+  }
 }
 
 .form__input--text::placeholder {
   color: @neutral;
   opacity: 0.3;
+}
+
+.form__input--text:focus {
+  border-color: @accent-dark;
 }
 
 .form__input--contacts {
@@ -131,11 +158,14 @@
   position: absolute;
   top: 11px;
   right: 8px;
+  fill: @secondary;
+  opacity: 0.2;
+}
 
-  path {
-    fill: @secondary;
-    opacity: 0.2;
-  }
+.form__input--text:hover + .form__input--contacts-icon,
+.form__input--text:focus + .form__input--contacts-icon {
+  fill: @accent-dark;
+  opacity: 1;
 }
 
 .form__textarea {
@@ -143,11 +173,20 @@
   height: 105px;
   border: solid 2px @secondary;
   padding: 16px;
+  color: @neutral;
+
+  &:hover {
+    border-color: @accent-dark;
+  }
 }
 
 .form__textarea::placeholder {
   color: @neutral;
   opacity: 0.3;
+}
+
+.form__textarea:focus {
+  border-color: @accent-dark;
 }
 
 .form__note {
