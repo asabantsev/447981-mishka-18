@@ -14,6 +14,14 @@
   padding: 25px 28px 30px 28px;
 }
 
+.product-additional__item--interior:hover {
+  background-color: #59d5bc;
+}
+
+.product-additional__item--toys:hover {
+  background-color: #46c1ae;
+}
+
 .product-additional__link {
   text-decoration: none;
   color: @primary;
@@ -22,6 +30,10 @@
   font-weight: bold;
   position: relative;
   display: block;
+}
+
+.product-additional__link:active {
+  opacity: 0.3;
 }
 
 .product-additional__icon--interior {
@@ -52,6 +64,14 @@
   .product-additional__item {
     width: 334px;
     padding: 28px 35px 31px;
+  }
+
+  .product-additional__item--interior:hover {
+    margin-top: -5px;
+  }
+
+  .product-additional__item--toys:hover {
+    margin-top: -5px;
   }
 
   .product-additional__link {
