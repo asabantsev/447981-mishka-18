@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -90,7 +94,7 @@
               <a class="product-additional__link" href="catalog.html">
                 Детские<br>игрушки
                 <svg class="product-additional__icon--toys" xmlns="http://www.w3.org/2000/svg" width="60" height="59.62">
-                  <use xlink:href="img/sprite.svg#icon-toys"></use>
+                  <use xlink:href="img/sprite.svg#icon-toy"></use>
                 </svg>
               </a>
             </li>
@@ -128,7 +132,7 @@
             </picture>
           </div>
           <p class="product-week__price">Цена: 990 руб.</p>
-          <button class="product-week__order" type="button">Заказать</button>
+          <button class="product-week__order button" type="button">Заказать</button>
         </div>
       </section>
 
@@ -138,32 +142,32 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--eco">
               <svg class="advantages__icon advantages__icon--eco" xmlns="http://www.w3.org/2000/svg" width="31.972" height="37.301">
-                <use xlink:href="img/sprite.svg#icon-eco"></use>
+                <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
               </svg>Экологически<br> чистые материалы
             </li>
             <li class="advantages__item advantages__item--style">
               <svg class="advantages__icon advantages__icon--style" xmlns="http://www.w3.org/2000/svg" width="46.575" height="27.332">
-                <use xlink:href="img/sprite.svg#icon-style"></use>
+                <use xlink:href="img/sprite.svg#icon-feature-money"></use>
               </svg>Скандинавский стиль по российской цене
             </li>
             <li class="advantages__item advantages__item--likes">
               <svg class="advantages__icon advantages__icon--likes" xmlns="http://www.w3.org/2000/svg" width="33.05" height="27.857">
-                <use xlink:href="img/sprite.svg#icon-likes"></use>
+                <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
               </svg>Увеличивает лайки на фотографиях
             </li>
             <li class="advantages__item advantages__item--love">
               <svg class="advantages__icon advantages__icon--love" xmlns="http://www.w3.org/2000/svg" width="34.373" height="34.373">
-                <use xlink:href="img/sprite.svg#icon-love"></use>
+                <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
               </svg>Связанно вручную с любовью и умилением
             </li>
             <li class="advantages__item advantages__item--support">
               <svg class="advantages__icon advantages__icon--support" xmlns="http://www.w3.org/2000/svg" width="54.156" height="23.183">
-                <use xlink:href="img/sprite.svg#icon-support"></use>
+                <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
               </svg>Поддержка отечественного производителя
             </li>
             <li class="advantages__item advantages__item--gift">
               <svg class="advantages__icon advantages__icon--gift" xmlns="http://www.w3.org/2000/svg" width="32.666" height="32.486">
-                <use xlink:href="img/sprite.svg#icon-gift"></use>
+                <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
               </svg>Поставляется в подарочной упаковке
             </li>
           </ul>
@@ -239,7 +243,7 @@
             <li class="social__item">
               <a class="social__link" href="https://www.facebook.com/htmlacademy">
                 <svg class="social__link--facebook" xmlns="http://www.w3.org/2000/svg" width="14.962px" height="27.718px">
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Facebook</span>
               </a>
@@ -259,7 +263,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип HTML Academy</span>
             <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="26.943px" height="34.09px">
-              <use xlink:href="img/sprite.svg#copyright-logo"></use>
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
         </p>
