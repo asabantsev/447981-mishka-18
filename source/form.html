@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка. Вязание на заказ</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
 
@@ -81,7 +81,7 @@
         <form method="get" action="https://echo.htmlacademy.ru" class="page-form__form form">
           <fieldset class="form__fieldset">
             <div class="form__fieldset-wrapper">
-              <legend class="form__heading">Тип</legend>
+              <div class="form__heading">Тип</div>
               <div class="form__options">
                 <p>
                   <input class="form__radio visually-hidden" type="radio" name="type" id="type-interior" checked="checked">
@@ -100,7 +100,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--color">
             <div class="form__fieldset-wrapper">
-              <legend class="form__heading">Цвет</legend>
+              <div class="form__heading">Цвет</div>
               <div class="form__options form__options--checkbox">
                 <p>
                   <input class="form__checkbox visually-hidden" type="checkbox" id="color-white" name="white" checked="checked">
@@ -131,26 +131,26 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <div class="form__fieldset-wrapper form__fieldset-wrapper--name">
-              <legend class="form__heading">ФИО</legend>
+              <div class="form__heading">ФИО</div>
               <div class="form__options form__options--text">
                 <p>
                   <label class="form__label--text" for="fullname-name">Имя:</label>
-                  <input class="form__input form__input--text" type="text" name="fullname-name" placeholder="Введите ваше имя*">
+                  <input class="form__input form__input--text" type="text" id="fullname-name" name="name" placeholder="Введите ваше имя*">
                 </p>
                 <p>
                   <label class="form__label--text" for="fullname-surname">Фамилия:</label>
-                  <input class="form__input form__input--text" type="text" name="fullname-surname" placeholder="Укажите фамилию*">
+                  <input class="form__input form__input--text" type="text" id="fullname-surname" name="surname" placeholder="Укажите фамилию*">
                 </p>
                 <p>
                   <label class="form__label--text" for="fullname-patronymic">Отчество:</label>
-                  <input class="form__input form__input--text" type="text" name="fullname-patronymic" placeholder="Отчество, если желаете">
+                  <input class="form__input form__input--text" type="text" id="fullname-patronymic" name="patronymic" placeholder="Отчество, если желаете">
                 </p>
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--phone">
             <div class="form__fieldset-wrapper">
-              <legend class="form__heading">Тел</legend>
+              <div class="form__heading">Тел</div>
               <div class="form__options form__options-contacts-wrapper">
                 <input class="form__input form__input--text form__input--contacts" type="text" name="phone-number" placeholder="+7 XXX XXX XX XX*">
                 <svg class="form__input--contacts-icon" xmlns="http://www.w3.org/2000/svg" width="24.829px" height="24.333px">
@@ -161,7 +161,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--email">
             <div class="form__fieldset-wrapper">
-              <legend class="form__heading">E-mail</legend>
+              <div class="form__heading">E-mail</div>
               <div class="form__options form__options-contacts-wrapper">
                 <input class="form__input form__input--text form__input--contacts" type="text" name="email-address" placeholder="Ваш Email*">
                 <svg class="form__input--contacts-icon" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
@@ -172,7 +172,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <div class="form__fieldset-wrapper">
-              <legend class="form__heading">Доп</legend>
+              <div class="form__heading">Доп</div>
               <div class="form__options form__options-textarea-wrapper">
                 <textarea class="form__textarea" name="other-input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
@@ -235,22 +235,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script-min.js"></script>
 
   </body>
 </html>
