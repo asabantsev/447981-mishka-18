@@ -1,0 +1,142 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  width: 100%;
+  height: 100%;
+  background-color: @primary;
+  opacity: 0.8;
+}
+
+.modal--show {
+  display: flex;
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+
+  margin-top: -168px;
+  margin-left: -160px;
+
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding: 35px 30px;
+
+  background-color: @primary;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-sizing: border-box;
+}
+
+.modal__headline {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.modal__note {
+  margin: 0 auto 20px auto;
+  font-size: 15px;
+  line-height: 30px;
+  color: @neutral;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.modal__input {
+  display: none;
+}
+
+.modal__form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 30px auto;
+}
+
+.modal__indicator {
+  width: 82px;
+  padding: 18px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid @primary-light;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal__indicator:hover {
+  border: 2px solid #c5c5c5;
+}
+
+.modal__input:checked + .modal__indicator {
+  border: 2px solid @accent-light;
+}
+
+.modal__button {
+  display: block;
+  padding: 18px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: @primary;
+  background-color: @accent-light;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 566px;
+    margin-left: -283px;
+  }
+
+  .modal__headline {
+    font-size: 30px;
+    line-height: 57px;
+    font-weight: bold;
+  }
+
+  .modal__note {
+    font-size: 17px;
+  }
+
+  .modal__form {
+    width: 350px;
+  }
+
+  .modal__indicator {
+    width: 112px;
+  }
+
+  .modal__button {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.modal--html {
+  position: static;
+
+  display: flex;
+  margin: 50px auto;
+
+  box-shadow: none;
+}
